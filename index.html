@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="gu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f5f0">
+<meta name="description" content="ગુજરાતીમાં સરળ, વાંચવા યોગ્ય અભ્યાસ અને માર્ગદર્શિકા.">
+<title>Cont — ગુજરાતી વાંચન</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./" aria-label="Cont હોમ"><span class="brand-mark">C</span><span>cont<span class="brand-dot">.</span></span></a>
+  <div class="top-actions">
+    <button id="smaller" class="icon-button" aria-label="અક્ષર નાનું કરો" title="અક્ષર નાનું">A−</button>
+    <button id="larger" class="icon-button" aria-label="અક્ષર મોટું કરો" title="અક્ષર મોટું">A+</button>
+    <button id="themeToggle" class="icon-button" aria-label="થીમ બદલો" title="થીમ બદલો">◐</button>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow"><span class="eyebrow-line"></span> ગુજરાતી વાંચન અનુભવ</div>
+    <h1>વિચારોને વાંચો.<br><span>સમજણને વધારો.</span></h1>
+    <p class="hero-copy">સરળ, શાંત અને વાંચવા માટે બનાવેલી જગ્યા.</p>
+  </section>
+  <div class="workspace">
+    <aside class="sidebar">
+      <div class="side-label">આ CONT માં</div>
+      <div class="book-card">
+        <div class="book-icon">ક</div>
+        <div><div class="book-title" id="bookTitle">દુકાનને સમજવાની અને આગળ વધારવાની માર્ગદર્શિકા</div><div class="book-meta">મુખ્ય ફાઇલ · ગુજરાતી</div></div>
+      </div>
+      <label class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="આ ફાઇલમાં શોધો…" aria-label="ફાઇલમાં શોધો"></label>
+      <div class="toc-heading">વિષયસૂચિ <span id="sectionCount"></span></div>
+      <nav id="toc" class="toc" aria-label="વિષયસૂચિ"><p class="muted">વિષયસૂચિ તૈયાર થઈ રહી છે…</p></nav>
+      <div class="side-foot">વાંચવા માટે રચાયેલ<br>ગુજરાતી કન્ટેન્ટ</div>
+    </aside>
+    <article class="reading-panel">
+      <div class="reading-head">
+        <div><span class="reading-label">CONT / ૦૦</span><h2 id="docTitle">દુકાનને સમજવાની અને આગળ વધારવાની માર્ગદર્શિકા</h2><p class="reading-sub">અભ્યાસ અને સંદર્ભ માટેની માર્ગદર્શિકા</p></div>
+        <a class="download-link" href="content/shreeramtools.md" download>↓ <span>MD ડાઉનલોડ</span></a>
+      </div>
+      <div class="progress-track"><div id="progress"></div></div>
+      <div id="content" class="markdown-body"><p class="muted">ફાઇલ લોડ થઈ રહી છે…</p></div>
+      <footer class="reader-footer"><span>ફાઇલ 00 · મુખ્ય ફાઇલ</span><a href="#top" id="backTop">ઉપર જાઓ ↑</a></footer>
+    </article>
+  </div>
+</main>
+<div id="searchStatus" class="search-status" role="status" aria-live="polite"></div>
+</body>
+</html>
